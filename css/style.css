@@ -1,3 +1,26 @@
+@keyframes textAnimate {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  80% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes textAnimate2 {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -21,6 +44,48 @@ body {
   background-color: #f7f7f7;
   max-width: 1342px;
   margin: 5rem auto;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #777777;
+  padding: 1.5rem 4rem;
+  background-color: white;
+  border-radius: 5rem;
+  display: inline-block;
+  transition: all 0.5s;
+  position: relative;
+  font-size: 2rem;
+}
+.btn:link:hover,
+.btn:visited:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0px 0.4rem 0.4rem rgba(5, 5, 5, 0.8043592437);
+}
+.btn:link:hover::after,
+.btn:visited:hover::after {
+  transform: scale(2);
+  opacity: 0;
+  transition: all 1s;
+  box-shadow: inset 0 0 1rem 1rem rgb(104, 151, 223);
+}
+.btn:link:active,
+.btn:visited:active {
+  transform: translateY(-0.2rem);
+}
+.btn:link::after,
+.btn:visited::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 5rem;
+  z-index: -1;
 }
 
 .header {
@@ -70,69 +135,4 @@ body {
   animation-name: textAnimate2;
   animation-duration: 4s;
   margin-bottom: 6.5rem;
-}
-
-@keyframes textAnimate {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  80% {
-    transform: translateY(-5rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-@keyframes textAnimate2 {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #777777;
-  padding: 1.5rem 4rem;
-  background-color: white;
-  border-radius: 5rem;
-  display: inline-block;
-  transition: all 0.5s;
-  position: relative;
-  font-size: 2rem;
-}
-.btn:link:hover,
-.btn:visited:hover {
-  transform: translateY(-0.4rem);
-  box-shadow: 0px 0.4rem 0.4rem rgba(5, 5, 5, 0.8043592437);
-}
-.btn:link:hover::after,
-.btn:visited:hover::after {
-  transform: scale(2);
-  opacity: 0;
-  transition: all 1s;
-  box-shadow: inset 0 0 1rem 1rem rgb(104, 151, 223);
-}
-.btn:link:active,
-.btn:visited:active {
-  transform: translateY(-0.2rem);
-}
-.btn:link::after,
-.btn:visited::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  border-radius: 5rem;
-  z-index: -1;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+.header {
+    background: linear-gradient(14deg, rgba(184, 156, 57, 0.342) 0%, rgba(88, 82, 57, 0.762) 40%, rgba(5,5,5,0.804359243697479) 100%), url(../img/header-background.jpg)no-repeat center;
+    width: 100%;
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    position: relative;
+
+    &__logo {
+        width: 5.6rem;
+        height: 7rem;
+        position: absolute;
+        top: 5rem;
+        left: 5rem;
+    }
+    &__box {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+}
+.title-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    &__main {
+        font-size: 6rem;
+        line-height: 120%; /* 60/50 */
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+        animation-name: textAnimate;
+        animation-duration: 4s;
+    }
+
+    &__secondary {
+        font-weight: 100;
+        font-size: 4rem;
+        line-height: 100%; /* 40/40 */
+        letter-spacing: 0.5rem;
+        animation-name: textAnimate2;
+        animation-duration: 4s;
+        margin-bottom: 6.5rem;
+    }
+}
