@@ -88,6 +88,10 @@ body {
   z-index: -1;
 }
 
+.section-about {
+  padding-top: 8rem;
+}
+
 .header {
   background: linear-gradient(14deg, rgba(184, 156, 57, 0.342) 0%, rgba(88, 82, 57, 0.762) 40%, rgba(5, 5, 5, 0.8043592437) 100%), url(../img/header-background.jpg) no-repeat center;
   width: 100%;
@@ -135,4 +139,18 @@ body {
   animation-name: textAnimate2;
   animation-duration: 4s;
   margin-bottom: 6.5rem;
+}
+
+.text-secondary {
+  font-size: 3.6rem;
+  list-style: 1rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  background: linear-gradient(14deg, rgba(186, 133, 84, 0.342) 0%, rgba(161, 79, 3, 0.762) 60%, rgba(5, 5, 5, 0.8043592437) 50%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.text-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1);
+  text-shadow: 0rem 0.4rem 0.4rem black;
 }/*# sourceMappingURL=style.css.map */

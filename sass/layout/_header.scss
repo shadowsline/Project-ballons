@@ -47,3 +47,18 @@
         margin-bottom: 6.5rem;
     }
 }
+.text-secondary {
+    text-align: center;
+    font-size: 3.6rem;
+    list-style: 1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: linear-gradient(14deg, rgba($color-brown-l, 0.342) 0%, rgba($color-brown-d, 0.762) 60%, rgba(5,5,5,0.804359243697479) 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1);
+        text-shadow: 0rem, 4rem, 4rem rgba($color-black 0.25);
+    }
+}
