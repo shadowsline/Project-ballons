@@ -36,3 +36,18 @@
         z-index: -1;
     }
 }    
+.btn__more:link, 
+.btn__more:visited {
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    color: $color-grey;
+    text-decoration: none;
+    padding: 1rem;
+    border-bottom: 1px $color-brown-l solid;
+    transition: all 1s;
+    &:hover {
+        background-color: $color-brown-l;
+        color: white;
+    }
+}
