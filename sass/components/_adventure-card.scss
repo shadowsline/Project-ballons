@@ -1,0 +1,19 @@
+.card {
+    width: 24rem;
+    height: 30rem;
+    background-color: rgba(255, 255, 255, 0.801);
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    text-align: center;  
+    transition: all 0.3s;
+    &__icon {
+        font-size: 6rem;
+        background: linear-gradient(14deg, rgba($color-brown-l, 0.342) 0%, rgba($color-brown-d, 0.762) 60%, rgba(5,5,5,0.804359243697479) 80%);
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
+    }
+    &:hover {
+        transform: translateY(-2rem);
+    }
+}

@@ -1,0 +1,31 @@
+.img-sectin {
+    position: relative;
+    width: 50rem;
+}
+.composition {
+
+    &__photo {
+        width: 55%;
+        position: absolute;
+        transition: all .4s;
+        z-index: 4;
+        &_n1 {
+            top: 0;
+            left: 0;
+        }
+
+        &_n2 {
+            top: 2rem;
+            left: 21rem;
+        }
+
+        &_n3 {
+            top: 10rem;
+            left: 8rem;
+        }
+        &:hover {
+            transform: scale(1.1);
+            z-index: 5;
+        }
+    } 
+}
