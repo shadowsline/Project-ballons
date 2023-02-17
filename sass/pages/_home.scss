@@ -11,9 +11,17 @@
     gap: 5rem;
     padding: 21.6rem 0;
     margin-top: 5rem;
-    background: linear-gradient(90deg, rgba($color-brown-l, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%), url(../../img/section-adventure.jpg) center / cover no-repeat;
+    background: linear-gradient(90deg, rgba($color-brown-l, 0.7), rgba($color-black, 0.7)), url(../../img/section-adventure.jpg) center / cover no-repeat;
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
 .section-tour {
     margin-top: 5rem;
+}
+.section-feedback {
+    position: relative;
+    padding: 8rem 0;
+}
+.section-book {
+    padding: 10rem;
+    background: linear-gradient(90deg, ($color-brown-l, $color-brown-d)),;
 }
