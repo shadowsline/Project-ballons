@@ -6,6 +6,18 @@
 
 html {
     font-size: 62.5%;
+    @include respond(tab-lend){
+        font-size: 56%;
+    }
+    @include respond(tab-port){
+        font-size: 50%;
+    }
+    @include respond(phone){
+        font-size: 30%;
+    }
+    @include respond(big-screen){
+        font-size: 75%;
+    }
 }
 
 body {
